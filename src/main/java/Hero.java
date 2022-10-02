@@ -3,11 +3,9 @@ import com.googlecode.lanterna.TerminalPosition;
 import com.googlecode.lanterna.TextColor;
 import com.googlecode.lanterna.graphics.TextGraphics;
 
-public class Hero {
-    private Position position;
-
+public class Hero extends Element{
     public Hero(int x, int y) {
-        position = new Position(x,y);
+        super(x,y);
     }
 
     public void draw(TextGraphics graphics) {
@@ -30,13 +28,5 @@ public class Hero {
 
     public Position moveRight() {
         return new Position(position.getX() + 1, position.getY());
-    }
-
-    public Position getPosition() {
-        return position;
-    }
-
-    public void setPosition(Position position) {
-        this.position = position;
     }
 }
