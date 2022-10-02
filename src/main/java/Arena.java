@@ -27,7 +27,7 @@ public class Arena {
         this.coins = createCoins();
     }
 
-    public void draw(TextGraphics graphics) throws IOException {
+    public void draw(TextGraphics graphics){
         graphics.setBackgroundColor(TextColor.Factory.fromString("#f20f0f"));
         graphics.fillRectangle(new TerminalPosition(0, 0), new TerminalSize(width, height), ' ');
 
