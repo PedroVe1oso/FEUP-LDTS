@@ -50,6 +50,8 @@ public class Arena {
             case ArrowRight -> moveHero(hero.moveRight());
             default -> System.out.println("Key not handled");
         }
+
+        retrieveCoins();
     }
 
     private void moveHero(Position position) {
@@ -67,6 +69,15 @@ public class Arena {
         }
 
         return true;
+    }
+
+    private void retrieveCoins() {
+        for (Coin coin : coins) {
+            if ((hero.getPosition().equals(coin.getPosition()))) {
+                coins.remove(coin);
+                break;
+            }
+        }
     }
 
     private List<Wall> createWalls() {
