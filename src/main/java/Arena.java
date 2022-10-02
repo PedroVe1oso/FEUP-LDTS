@@ -36,21 +36,12 @@ public class Arena {
     }
 
     public void processKey(KeyStroke key){
-        switch(key.getKeyType()){
-            case ArrowUp:
-                moveHero(hero.moveUp());
-                break;
-            case ArrowDown:
-                moveHero(hero.moveDown());
-                break;
-            case ArrowLeft:
-                moveHero(hero.moveLeft());
-                break;
-            case ArrowRight:
-                moveHero(hero.moveRight());
-                break;
-            default:
-                System.out.println("Key not handled");
+        switch (key.getKeyType()) {
+            case ArrowUp -> moveHero(hero.moveUp());
+            case ArrowDown -> moveHero(hero.moveDown());
+            case ArrowLeft -> moveHero(hero.moveLeft());
+            case ArrowRight -> moveHero(hero.moveRight());
+            default -> System.out.println("Key not handled");
         }
     }
 
