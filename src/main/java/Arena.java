@@ -58,7 +58,10 @@ public class Arena {
         }
 
         retrieveCoins();
+
+        verifyMonsterCollisions();
         moveMonsters();
+        verifyMonsterCollisions();
     }
 
     private void moveHero(Position position) {
@@ -93,6 +96,14 @@ public class Arena {
                 break;
             }
         }
+    }
+
+    private void verifyMonsterCollisions() {
+        for (Monster monster : monsters)
+            if (hero.getPosition().equals(monster.getPosition())) {
+                System.out.println("You died!");
+                System.exit(0);
+            }
     }
 
     private List<Wall> createWalls() {
