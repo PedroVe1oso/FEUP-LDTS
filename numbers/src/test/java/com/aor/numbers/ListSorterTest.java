@@ -17,10 +17,17 @@ public class ListSorterTest {
     }
     @Test
     public void sort() {
-
         ListSorter sorter = new ListSorter();
         List<Integer> sorted = sorter.sort(list);
 
         Assertions.assertEquals(expected, sorted);
+    }
+
+    @Test
+    public void sort_bug_8726() {
+        ListSorter sorter = new ListSorter();
+        List<Integer> sorted = sorter.sort(Arrays.asList(1,2,4,2));
+
+        Assertions.assertEquals(Arrays.asList(1,2,2,4), sorted);
     }
 }
