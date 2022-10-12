@@ -18,7 +18,8 @@ public class ListDeduplicatorTest {
     @Test
     public void deduplicate() {
         ListDeduplicator deduplicator = new ListDeduplicator();
-        List<Integer> distinct = deduplicator.deduplicate(list);
+        GenericListSorter listSorter = new ListSorter();
+        List<Integer> distinct = deduplicator.deduplicate(list, listSorter);
 
         Assertions.assertEquals(expected, distinct);
     }
@@ -26,7 +27,8 @@ public class ListDeduplicatorTest {
     @Test
     public void deduplicate_bug_8726() {
         GenericListDeduplicator deduplicator = new ListDeduplicator();
-        List<Integer> distinct = deduplicator.deduplicate(Arrays.asList(1,2,4,2));
+        GenericListSorter listSorter = new ListSorter();
+        List<Integer> distinct = deduplicator.deduplicate(Arrays.asList(1,2,4,2), listSorter);
 
         Assertions.assertEquals(Arrays.asList(1,2,4), distinct);
     }
