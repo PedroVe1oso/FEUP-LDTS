@@ -24,9 +24,8 @@ public class ListDeduplicatorTest {
             }
         }
 
-        ListDeduplicator deduplicator = new ListDeduplicator();
-        GenericListSorter listSorter = new StubListSorter();
-        List<Integer> distinct = deduplicator.deduplicate(list, listSorter);
+        ListDeduplicator deduplicator = new ListDeduplicator(new StubListSorter());
+        List<Integer> distinct = deduplicator.deduplicate(list);
 
         Assertions.assertEquals(expected, distinct);
     }
@@ -40,9 +39,8 @@ public class ListDeduplicatorTest {
             }
         }
 
-        GenericListDeduplicator deduplicator = new ListDeduplicator();
-        GenericListSorter listSorter = new StubListSorter();
-        List<Integer> distinct = deduplicator.deduplicate(Arrays.asList(1,2,4,2), listSorter);
+        GenericListDeduplicator deduplicator = new ListDeduplicator(new StubListSorter());
+        List<Integer> distinct = deduplicator.deduplicate(Arrays.asList(1,2,4,2));
 
         Assertions.assertEquals(Arrays.asList(1,2,4), distinct);
     }
