@@ -22,4 +22,12 @@ public class ListDeduplicatorTest {
 
         Assertions.assertEquals(expected, distinct);
     }
+
+    @Test
+    public void deduplicate_bug_8726() {
+        GenericListDeduplicator deduplicator = new ListDeduplicator();
+        List<Integer> distinct = deduplicator.deduplicate(Arrays.asList(1,2,4,2));
+
+        Assertions.assertEquals(Arrays.asList(1,2,4), distinct);
+    }
 }
