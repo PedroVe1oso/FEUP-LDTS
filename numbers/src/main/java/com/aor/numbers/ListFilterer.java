@@ -2,10 +2,10 @@ package com.aor.numbers;
 
 import java.util.List;
 
-public class ListFilter{
+public class ListFilterer {
     GenericListFilter filter;
 
-    public ListFilter(GenericListFilter filter) {
+    public ListFilterer(GenericListFilter filter) {
         this.filter = filter;
     }
 
