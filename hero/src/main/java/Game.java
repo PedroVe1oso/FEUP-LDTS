@@ -10,7 +10,7 @@ import javax.swing.*;
 import java.io.IOException;
 
 public class Game {
-    private final Screen screen;
+    private static Screen screen;
     private Arena arena;
 
     public Game(int width,int height) throws IOException {
