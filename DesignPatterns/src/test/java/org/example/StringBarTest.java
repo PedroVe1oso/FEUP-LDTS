@@ -9,8 +9,10 @@ public class StringBarTest {
     public void happyHour() {
         Bar bar = new StringBar();
         assertFalse(bar.isHappyHour());
+
         bar.startHappyHour();
         assertTrue(bar.isHappyHour());
+
         bar.endHappyHour();
         assertFalse(bar.isHappyHour());
     }
