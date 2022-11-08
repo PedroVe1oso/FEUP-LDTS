@@ -70,7 +70,7 @@ public class OrderRecipeTest {
 
         client.wants(drink, recipe, stringBar);
         assertEquals("AbCd-aBcD", drink.getText());
-        
+
         // Recipe is only ordered here
         stringBar.startHappyHour();
         assertEquals("dCbX-DcBa", drink.getText());
