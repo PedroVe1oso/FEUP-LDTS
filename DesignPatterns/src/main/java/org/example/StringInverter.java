@@ -8,4 +8,9 @@ public class StringInverter implements StringTransformer{
         stringBuilder.append(drink.getText());
         drink.setText(stringBuilder.reverse().toString());
     }
+
+    @Override
+    public void undo(StringDrink drink) {
+        execute(drink);
+    }
 }
