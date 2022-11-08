@@ -7,7 +7,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class StringRecipe {
+public class StringRecipeTest {
     @Test
     public void stringRecipe() {
         StringDrink drink = new StringDrink( "AbCd-aBcD");
