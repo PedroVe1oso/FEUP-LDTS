@@ -1,0 +1,12 @@
+pt/up/fe/ldts/numbers/ListAggregatorTest.java
+ pt.up.fe.ldts.numbers.ListAggregatorTest
+pt/up/fe/ldts/numbers/ListSorterTest.java
+ pt.up.fe.ldts.numbers.ListSorterTest
+pt/up/fe/ldts/numbers/PositiveFilterTest.java
+ pt.up.fe.ldts.numbers.PositiveFilterTest
+pt/up/fe/ldts/numbers/ListDeduplicatorTest.java
+ pt.up.fe.ldts.numbers.ListDeduplicatorTest
+pt/up/fe/ldts/numbers/ListFiltererTest.java
+ pt.up.fe.ldts.numbers.ListFiltererTest
+pt/up/fe/ldts/numbers/DivisibleByFilterTest.java
+ pt.up.fe.ldts.numbers.DivisibleByFilterTest

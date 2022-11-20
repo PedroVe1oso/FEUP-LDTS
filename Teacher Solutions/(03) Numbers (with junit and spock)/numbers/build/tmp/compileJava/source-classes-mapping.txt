@@ -1,0 +1,18 @@
+pt/up/fe/ldts/numbers/ListDeduplicator.java
+ pt.up.fe.ldts.numbers.ListDeduplicator
+pt/up/fe/ldts/numbers/GenericListFilter.java
+ pt.up.fe.ldts.numbers.GenericListFilter
+pt/up/fe/ldts/numbers/PositiveFilter.java
+ pt.up.fe.ldts.numbers.PositiveFilter
+pt/up/fe/ldts/numbers/ListFilterer.java
+ pt.up.fe.ldts.numbers.ListFilterer
+pt/up/fe/ldts/numbers/DivisibleByFilter.java
+ pt.up.fe.ldts.numbers.DivisibleByFilter
+pt/up/fe/ldts/numbers/GenericListSorter.java
+ pt.up.fe.ldts.numbers.GenericListSorter
+pt/up/fe/ldts/numbers/GenericListDeduplicator.java
+ pt.up.fe.ldts.numbers.GenericListDeduplicator
+pt/up/fe/ldts/numbers/ListAggregator.java
+ pt.up.fe.ldts.numbers.ListAggregator
+pt/up/fe/ldts/numbers/ListSorter.java
+ pt.up.fe.ldts.numbers.ListSorter

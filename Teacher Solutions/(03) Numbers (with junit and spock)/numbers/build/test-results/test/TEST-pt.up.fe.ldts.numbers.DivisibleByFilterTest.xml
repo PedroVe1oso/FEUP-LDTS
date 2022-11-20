@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.up.fe.ldts.numbers.DivisibleByFilterTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-10-20T17:58:30" hostname="greyhound" time="0.02">
+  <properties/>
+  <testcase name="increment()" classname="pt.up.fe.ldts.numbers.DivisibleByFilterTest" time="0.018"/>
+  <testcase name="decrement()" classname="pt.up.fe.ldts.numbers.DivisibleByFilterTest" time="0.001"/>
+  <system-out><![CDATA[0
+0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
